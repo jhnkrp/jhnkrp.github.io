@@ -2,20 +2,47 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Whoami - Maalfer</title>
+    <title>Perfil de Maquina Virtual</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Hola, soy Maalfer 👋</h1>
-    </header>
+    <div class="container">
 
-    <section id="sobre-mi">
-        <p>Esta es una presentación simplificada de mi perfil.</p>
-    </section>
+        <header>
+            <h1>Hola 👋 Soy</h1>
+            <h2>Tu Nombre Aquí</h2>
+            <p>Administrador de Sistemas / DevOps</p>
+        </header>
 
-    <footer>
-        <p>© 2026 Maalfer</p>
-    </footer>
+        <section class="info">
+            <div class="box">
+                <h3>📍 Ubicación</h3>
+                <p>Ciudad, País</p>
+            </div>
+
+            <div class="box">
+                <h3>📧 Contacto</h3>
+                <p>email@tu.com</p>
+            </div>
+
+            <div class="box">
+                <h3>💻 Perfil</h3>
+                <p>Administrador de sistemas, experto en VMs e infraestructura.</p>
+            </div>
+
+            <div class="box">
+                <h3>🖥 Máquina Virtual</h3>
+                <p>Resolución: <span id="vm-res">-- x --</span></p>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Script para mostrar resolución de VM -->
+    <script>
+        const width = window.screen.width;
+        const height = window.screen.height;
+        document.getElementById('vm-res').textContent = `${width} × ${height}`;
+    </script>
 </body>
 </html>
