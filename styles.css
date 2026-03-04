@@ -1,55 +1,125 @@
-/* Fuente retro (pixel) */
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+/* Fuente monoespaciada y estilos generales */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Mono&display=swap');
+
+* {
+    box-sizing: border-box;
+}
 
 body {
-      font-family: 'Roboto', sans-serif;
-    background: #000;
-    color: #fff;
-    padding: 0;
     margin: 0;
-    text-align: center;
+    font-family: 'Fira Mono', monospace;
+    background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1400&q=80') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
-.container {
-    max-width: 700px;
-    margin: auto;
-    padding: 1rem;
+/* Fondo difuminado oscuro */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.85);
+    z-index: 0;
 }
 
-/* Cabecera grande y llamativa */
-header {
-    margin-top: 2rem;
+/* Barra superior */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 2rem;
+    background: transparent;
+    z-index: 10;
+    display: flex;
+    gap: 1.5rem;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
     color: #ffcc00;
-    text-shadow: 2px 2px #000;
 }
 
-header p {
-    font-size: 14px;
-    color: #00ff00;
+/* Contenedor central */
+main {
+    margin: auto;
+    text-align: center;
+    z-index: 1;
+    padding: 6rem 2rem 2rem;
+    max-width: 600px;
 }
 
-/* Secciones */
-section {
-    border-top: 2px solid #fff;
-    margin-top: 2rem;
-    padding-top: 1rem;
+main h1 {
+    font-size: 2.4rem;
+    margin-bottom: 0.3rem;
 }
 
-/* Títulos de secciones */
-section h2 {
-    color: #00ccff;
-    text-shadow: 1px 1px #000;
+main p.subtitle {
+    font-size: 1.2rem;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
 }
 
-/* VM resolución resaltada */
-#vm-res {
-    color: #ff00ff;
-    font-size: 14px;
-    text-shadow: 1px 1px #000;
+main small {
+    font-size: 0.7rem;
+    color: #ccc;
+    display: block;
+    margin-bottom: 1.5rem;
 }
 
-/* Enlaces estilo retro */
-a {
-    color: #00ff00;
-    text-decoration: underline;
+/* Botón amarillo principal */
+main .btn-primary {
+    background-color: #ffcc00;
+    color: black;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    font-weight: 700;
+    font-family: 'Fira Mono', monospace;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    margin-bottom: 3rem;
+}
+
+main .btn-primary:hover {
+    background-color: #e6b800;
+}
+
+/* Contenedor de botones para máquinas virtuales */
+.vm-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    max-width: 700px;
+    margin: 0 auto 3rem;
+    z-index: 1;
+}
+
+.vm-buttons button {
+    background-color: #ffcc00;
+    border: none;
+    padding: 0.7rem 1.2rem;
+    font-family: 'Fira Mono', monospace;
+    font-weight: 700;
+    color: black;
+    border-radius: 4px;
+    cursor: pointer;
+    min-width: 130px;
+    transition: background-color 0.3s ease;
+    user-select: none;
+}
+
+.vm-buttons button:hover {
+    background-color: #e6b800;
 }
