@@ -2,46 +2,41 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Perfil Retro</title>
+    <title>Perfil Personal</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
 
-        <header>
-            <h1>Hola 👋 Soy</h1>
-            <h2>Tu Nombre Aquí</h2>
-            <p>Administrador de Sistemas / DevOps</p>
-        </header>
+<div class="container">
 
-        <section class="info">
-            <div class="box">
-                <h3>📍 Ubicación</h3>
-                <p>Ciudad, País</p>
-            </div>
+    <header>
+        <h1>Hola, soy Tu Nombre</h1>
+        <p>Informático & Especialista en VMs</p>
+    </header>
 
-            <div class="box">
-                <h3>📧 Contacto</h3>
-                <p>email@tu.com</p>
-            </div>
+    <section class="about">
+        <h2>¿Quién soy?</h2>
+        <p>Soy desarrollador, administrador de sistemas y entusiasta de máquinas virtuales.</p>
+    </section>
 
-            <div class="box">
-                <h3>💻 Perfil</h3>
-                <p>Administrador de sistemas, experto en VMs e infraestructura.</p>
-            </div>
+    <section class="skills">
+        <h2>Resolución de Máquina Virtual</h2>
+        <p><span id="vm-res">-- x --</span> píxeles</p>
+    </section>
 
-            <div class="box">
-                <h3>🖥 Máquina Virtual</h3>
-                <p>Resolución: <span id="vm-res">-- x --</span></p>
-            </div>
-        </section>
+    <section class="contact">
+        <h2>Contacto</h2>
+        <p>Email: tuemail@ejemplo.com</p>
+        <p>LinkedIn: <a href="#" target="_blank">enlace</a></p>
+    </section>
 
-    </div>
+</div>
 
-    <script>
-        const width = window.screen.width;
-        const height = window.screen.height;
-        document.getElementById('vm-res').textContent = `${width} × ${height}`;
-    </script>
+<script>
+    const w = window.screen.width;
+    const h = window.screen.height;
+    document.getElementById('vm-res').textContent = `${w} × ${h}`;
+</script>
+
 </body>
 </html>
