@@ -1,42 +1,41 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>Perfil Personal</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8" />
+    <title>Perfil Mario - Máquinas Virtuales</title>
+    <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-<div class="container">
+    <nav>
+        <a href="#">👋 Sobre Mí</a>
+        <span>|</span>
+        <a href="#">Docencia</a>
+        <span>|</span>
+        <a href="#">Programación</a>
+        <span>|</span>
+        <a href="#">Ciberseguridad</a>
+    </nav>
 
-    <header>
-        <h1>Hello Friend, I'm Jhon</h1>
-        <p>Magister en Ingenieria de Sistemas comenzando a resolver VMs</p>
-    </header>
+    <main>
+        <h1>Hola, soy Mario</h1>
+        <p class="subtitle">Informático especializado en Ciberseguridad y Docencia</p>
+        <small>Hardening sistemas linux</small>
+        <button class="btn-primary">¿Cómo te puedo ayudar?</button>
 
-    <section class="about">
-        <h2>¿Quién soy?</h2>
-        <p>Soy administrador de sistemas y entusiasta de máquinas virtuales.</p>
-    </section>
-
-    <section class="skills">
-        <h2>Resolución de Máquina Virtual</h2>
-        <p><span id="vm-res">-- x --</span> píxeles</p>
-    </section>
-
-    <section class="contact">
-        <h2>Contacto</h2>
-        <p>Email: tuemail@ejemplo.com</p>
-        <p>LinkedIn: <a href="#" target="_blank">enlace</a></p>
-    </section>
-
-</div>
-
-<script>
-    const w = window.screen.width;
-    const h = window.screen.height;
-    document.getElementById('vm-res').textContent = `${w} × ${h}`;
-</script>
+        <div class="vm-buttons">
+            <button>VM Ubuntu 20.04</button>
+            <button>VM Debian 11</button>
+            <button>VM Kali Linux</button>
+            <button>VM Windows 10</button>
+            <button>VM CentOS 8</button>
+            <button>VM Fedora 35</button>
+            <button>VM Arch Linux</button>
+            <button>VM Alpine Linux</button>
+            <button>VM MacOS</button>
+            <button>VM OpenSUSE</button>
+        </div>
+    </main>
 
 </body>
 </html>
