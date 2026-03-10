@@ -16,6 +16,11 @@ body {
     flex-direction: column;
 }
 
+.btn-container {
+  display: flex;
+  gap: 10px; /* espacio entre botones */
+}
+
 /* Fondo difuminado oscuro */
 body::before {
     content: "";
